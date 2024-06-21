@@ -1,0 +1,147 @@
+/* 
+  Method of use:
+  - Install globaly sass
+  - Run sass generator.scss style.css (Remember to provide variables1)
+*/
+
+@each $size-key, $size-val in $size-variants {
+  .m-#{$size-key} {
+    margin: $size-val;
+  }
+  .my-#{$size-key} {
+    margin-top: $size-val;
+    margin-bottom: $size-val;
+  }
+  .mx-#{$size-key} {
+    margin-left: $size-val;
+    margin-right: $size-val;
+  }
+  .mt-#{$size-key} {
+    margin-top: $size-val;
+  }
+  .mr-#{$size-key} {
+    margin-right: $size-val;
+  }
+  .mb-#{$size-key} {
+    margin-bottom: $size-val;
+  }
+  .ml-#{$size-key} {
+    margin-left: $size-val;
+  }
+
+  .p-#{$size-key} {
+    padding: $size-val;
+  }
+  .py-#{$size-key} {
+    padding-top: $size-val;
+    padding-bottom: $size-val;
+  }
+  .px-#{$size-key} {
+    padding-left: $size-val;
+    padding-right: $size-val;
+  }
+  .pt-#{$size-key} {
+    padding-top: $size-val;
+  }
+  .pr-#{$size-key} {
+    padding-right: $size-val;
+  }
+  .pb-#{$size-key} {
+    padding-bottom: $size-val;
+  }
+  .pl-#{$size-key} {
+    padding-left: $size-val;
+  }
+}
+
+@each $break-key, $break-val in $breakpoints {
+  @include mq-min($break-val) {
+    @each $size-key, $size-val in $size-variants {
+      .#{$break-key}-m-#{$size-key} {
+        margin: $size-val;
+      }
+      .#{$break-key}-my-#{$size-key} {
+        margin-top: $size-val;
+        margin-bottom: $size-val;
+      }
+      .#{$break-key}-mx-#{$size-key} {
+        margin-left: $size-val;
+        margin-right: $size-val;
+      }
+      .#{$break-key}-mt-#{$size-key} {
+        margin-top: $size-val;
+      }
+      .#{$break-key}-mr-#{$size-key} {
+        margin-right: $size-val;
+      }
+      .#{$break-key}-mb-#{$size-key} {
+        margin-bottom: $size-val;
+      }
+      .#{$break-key}-ml-#{$size-key} {
+        margin-left: $size-val;
+      }
+
+      .#{$break-key}-p-#{$size-key} {
+        padding: $size-val;
+      }
+      .#{$break-key}-py-#{$size-key} {
+        padding-top: $size-val;
+        padding-bottom: $size-val;
+      }
+      .#{$break-key}-px-#{$size-key} {
+        padding-left: $size-val;
+        padding-right: $size-val;
+      }
+      .#{$break-key}-pt-#{$size-key} {
+        padding-top: $size-val;
+      }
+      .#{$break-key}-pr-#{$size-key} {
+        padding-right: $size-val;
+      }
+      .#{$break-key}-pb-#{$size-key} {
+        padding-bottom: $size-val;
+      }
+      .#{$break-key}-pl-#{$size-key} {
+        padding-left: $size-val;
+      }
+    }
+  }
+}
+
+@each $break-key, $break-val in $breakpoints {
+  @include mq-min($break-val) {
+    .#{$break-key}-w-10 {
+      width: 10%;
+    }
+    .#{$break-key}-w-20 {
+      width: 20%;
+    }
+    .#{$break-key}-w-30 {
+      width: 30%;
+    }
+    .#{$break-key}-w-40 {
+      width: 40%;
+    }
+    .#{$break-key}-w-50 {
+      width: 50%;
+    }
+    .#{$break-key}-w-60 {
+      width: 60%;
+    }
+    .#{$break-key}-w-60 {
+      width: 60%;
+    }
+    .#{$break-key}-w-70 {
+      width: 70%;
+    }
+    .#{$break-key}-w-80 {
+      width: 80%;
+    }
+    .#{$break-key}-w-90 {
+      width: 90%;
+    }
+    .#{$break-key}-w-100 {
+      width: 100%;
+    }
+  }
+}

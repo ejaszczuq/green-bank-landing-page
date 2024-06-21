@@ -1,0 +1,31 @@
+#overlay {
+  &-default {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+  }
+
+  .drawer {
+    z-index: 1001;
+  }
+  .dialog {
+    z-index: 2001;
+  }
+  .modal {
+    z-index: 3001;
+  }
+  .message {
+    z-index: 4001;
+  }
+  .notification {
+    z-index: 5001;
+  }
+  .alert {
+    z-index: 6001;
+  }
+}
+
+$navbar-z-index: 300;

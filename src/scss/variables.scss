@@ -1,0 +1,79 @@
+@use "./mixins.scss" as *;
+
+$primary: #2bb32a;
+
+$sec: #3d544d;
+$light-sec: rgba(61, 84, 77, 0.24);
+
+$white-1: #ffffff;
+
+$grey-1: #424242;
+
+$black-1: #000000;
+
+$gradient-1: linear-gradient(112.54deg, rgba(255, 255, 255, 0.37) 10.29%, rgba(255, 255, 255, 0) 100.35%);
+
+// BREAKPOINTS
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+$breakpoints: (
+  xs: "$xs",
+  sm: "$sm",
+  md: "$md",
+  lg: "$lg",
+  xl: "$xl",
+  xxl: "$xxl"
+);
+
+// APP SIZES
+$mobile: $md;
+$app-padding-x: 16px;
+$app-container: 1100px + 2 * $app-padding-x;
+
+$navbar-h: 60px;
+$sidebar-w: 80px;
+
+// Z-INDEX'ES
+$navbar-z-index: 200;
+$mobile-toolbar-z-index: 100;
+
+// SIZES
+$size-variants: (
+  0: 0,
+  1: 2px,
+  2: 4px,
+  3: 8px,
+  4: 16px,
+  5: 24px,
+  6: 32px,
+  7: 40px,
+  8: 48px,
+  9: 64px,
+  10: 80px,
+  11: 96px,
+  12: 160px
+);
+
+// FONT WEIGHT'S
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+$extra-black: 950;
+
+//POSITION VARIANTS
+$position-variants: (
+  start: "flex-start",
+  center: "center",
+  end: "flex-end"
+);

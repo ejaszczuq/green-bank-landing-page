@@ -1,0 +1,53 @@
+@use "./variables.scss" as *;
+@use "./typography-mixins.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap");
+html {
+  color: $white-1;
+  background-color: #1a1e1c;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+// Font's classes ************************************************************
+
+h1,
+.h1 {
+  @include h1;
+}
+
+h2,
+.h2 {
+  @include h2;
+}
+
+p,
+.p0 {
+  @include p0;
+}
+
+.p1 {
+  @include p1;
+}
+
+// Color's classes ***********************************************************
+
+.primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+
+.white-1 {
+  color: $white-1;
+}
+.white-1-bg {
+  background-color: $white-1;
+}
+
+.black-1 {
+  color: $black-1;
+}
+.black-1-bg {
+  background-color: $black-1;
+}

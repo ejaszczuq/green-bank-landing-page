@@ -1,0 +1,25 @@
+{
+  "short_name": "Green Bank",
+  "name": "Green Bank",
+  "icons": [
+    {
+      "src": "./images/favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "./images/logo192.png",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/logo512.png",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fafafc",
+  "background_color": "#fafafc"
+}

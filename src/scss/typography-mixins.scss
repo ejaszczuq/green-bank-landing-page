@@ -1,0 +1,25 @@
+@use "./mixins.scss" as *;
+@use "./variables.scss" as *;
+
+@mixin h1 {
+  @include mq-max($md) {
+  }
+}
+
+@mixin h2 {
+  @include mq-max($md) {
+  }
+}
+
+@mixin h3 {
+  @include mq-max($md) {
+  }
+}
+
+@mixin p0 {
+  @include mq-max($md) {
+  }
+}
+
+@mixin p1 {
+}

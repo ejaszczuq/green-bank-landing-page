@@ -1,0 +1,194 @@
+@use "@scss/variables.scss" as *;
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.none {
+  display: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-grid {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thin {
+  font-weight: 100 !important;
+}
+.extra-light {
+  font-weight: 200 !important;
+}
+.light {
+  font-weight: 300 !important;
+}
+.regular {
+  font-weight: 400 !important;
+}
+.regular {
+  font-weight: 500 !important;
+}
+.semi-bold {
+  font-weight: 600 !important;
+}
+.bold {
+  font-weight: 700 !important;
+}
+.extra-bold {
+  font-weight: 800 !important;
+}
+.black {
+  font-weight: 900 !important;
+}
+.extra-black {
+  font-weight: 950 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.line-h-normal {
+  line-height: 100%;
+}
+
+.underline {
+  text-decoration: underline;
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.break-word {
+  word-break: break-word;
+}
+.white-space-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.required {
+  &.text:after {
+    content: "*";
+    color: red;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.no-select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.no-select:focus {
+  outline: none !important;
+}
+.select-all-text {
+  user-select: all;
+  -moz-user-select: all;
+  -webkit-user-select: all;
+}
+
+.without-highlight-color {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.op-0 {
+  opacity: 0;
+}
+.op-01 {
+  opacity: 0.1;
+}
+.op-02 {
+  opacity: 0.2;
+}
+.op-03 {
+  opacity: 0.3;
+}
+.op-04 {
+  opacity: 0.4;
+}
+.op-05 {
+  opacity: 0.5;
+}
+.op-06 {
+  opacity: 0.6;
+}
+.op-07 {
+  opacity: 0.7;
+}
+.op-08 {
+  opacity: 0.8;
+}
+.op-09 {
+  opacity: 0.9;
+}
+.op-10 {
+  opacity: 1;
+}

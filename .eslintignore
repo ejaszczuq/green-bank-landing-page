@@ -1,0 +1,10 @@
+.firebase
+node_modules/
+public/
+build/
+
+*.css
+*.scss
+*.svg
+
+src/**/graphql.schema.ts

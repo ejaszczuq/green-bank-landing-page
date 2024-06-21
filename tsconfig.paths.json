@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@guards/*": ["./src/guards/*"],
+      "@hoc/*": ["./src/hoc/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@mocks/*": ["./src/mocks/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@router/*": ["./src/router/*"],
+      "@scripts/*": ["./src/scripts/*"],
+      "@scss/*": ["./src/scss/*"],
+      "@services/*": ["./src/services/*"],
+      "@tests/*": ["./src/tests/*"],
+      "@translations/*": ["./src/translations/*"],
+      "@src/types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@images/*": ["./public/images/*"],
+      "@downloads/*": ["./public/downloads/*"],
+      "@pdfs/*": ["./public/pdfs/*"],
+      "@locales/*": ["./public/locales/*"]
+    }
+  }
+}
