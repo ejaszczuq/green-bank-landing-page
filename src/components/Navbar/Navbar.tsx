@@ -3,6 +3,7 @@ import React from "react";
 import "./Navbar.scss";
 
 import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
+import Button from "@components/Button/Button";
 
 interface INavbar {
   sectionNames: string[];
@@ -21,7 +22,7 @@ const Navbar: React.FC<INavbar> = ({ sectionNames, btnName }) => {
         ))}
       </div>
       <div className="btnSection">
-        <button>{btnName}</button>
+        <Button btnName={btnName} variant="secondary" />
       </div>
     </div>
   );

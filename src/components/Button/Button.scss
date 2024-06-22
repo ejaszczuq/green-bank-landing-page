@@ -1,0 +1,38 @@
+@use "@scss/global.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.primary {
+  background-color: $primary;
+  color: $white-1;
+  padding: 16px 32px;
+  height: Hug(56px);
+  width: Hug(152px);
+  font-size: $medium;
+}
+
+.secondary {
+  border: 2px solid $primary;
+  color: $primary;
+  font-size: $bold;
+  width: Hug(128px);
+  height: Hug(48px);
+  padding: 12px 32px;
+}
+
+.primary,
+.secondary {
+  border-radius: 64px;
+}
+
+.underlined {
+  color: $white-1;
+  border-bottom: 1px solid $white-1;
+  font-family: "Poppins", sans-serif;
+  font-weight: $regular;
+}
+
+* {
+  font-size: 16px;
+  line-height: 24px;
+}
