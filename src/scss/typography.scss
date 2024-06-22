@@ -2,6 +2,7 @@
 @use "./typography-mixins.scss" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap");
+
 html {
   color: $white-1;
   background-color: #1a1e1c;
@@ -9,7 +10,6 @@ html {
 }
 
 // Font's classes ************************************************************
-
 h1,
 .h1 {
   @include h1;
@@ -30,10 +30,10 @@ p,
 }
 
 // Color's classes ***********************************************************
-
 .primary {
   color: $primary;
 }
+
 .bg-primary {
   background-color: $primary;
 }
@@ -41,6 +41,7 @@ p,
 .white-1 {
   color: $white-1;
 }
+
 .white-1-bg {
   background-color: $white-1;
 }
@@ -48,6 +49,7 @@ p,
 .black-1 {
   color: $black-1;
 }
+
 .black-1-bg {
   background-color: $black-1;
 }

@@ -1,25 +1,41 @@
 @use "./mixins.scss" as *;
 @use "./variables.scss" as *;
 
+// Heading Mixins
 @mixin h1 {
+  font-size: 56px;
+  line-height: 64px;
   @include mq-max($md) {
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 
 @mixin h2 {
+  font-size: 48px;
+  line-height: 56px;
   @include mq-max($md) {
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
 @mixin h3 {
+  font-size: 40px;
+  line-height: 48px;
   @include mq-max($md) {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
+// Paragraph Mixins
 @mixin p0 {
-  @include mq-max($md) {
-  }
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 @mixin p1 {
+  font-size: 16px;
+  line-height: 1.5;
 }
