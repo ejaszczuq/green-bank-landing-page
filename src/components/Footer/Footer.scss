@@ -1,0 +1,59 @@
+@use "@scss/global.scss" as *;
+
+.footer {
+  background-color: $light-sec;
+  backdrop-filter: blur(8px);
+  width: 100%;
+
+  .footer-main {
+    max-width: $app-container;
+    padding: 60px $app-padding-x 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    &-content {
+      display: flex;
+
+      .footer-logo {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        max-width: 392px;
+        width: 100%;
+      }
+
+      .p-regular {
+        color: $grey-2;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        gap: 32px;
+
+        .links-column {
+          display: flex;
+          flex-flow: column nowrap;
+          max-width: 180px;
+          width: 100%;
+        }
+
+        .section-links {
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 8px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: $grey-2;
+  }
+}

@@ -52,7 +52,6 @@ section {
 }
 
 #root {
-  // height: 100vh;
   height: 100%;
   overflow: auto;
 
@@ -63,7 +62,6 @@ section {
 
 section {
   position: relative;
-  // padding: 0px 16px;
 }
 
 hr {
@@ -102,4 +100,8 @@ input {
   font-weight: $light;
   border: none;
   outline: none;
+}
+
+ul {
+  list-style-type: none;
 }

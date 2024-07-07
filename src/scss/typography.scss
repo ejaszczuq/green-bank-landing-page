@@ -21,12 +21,24 @@ h2,
 }
 
 p,
-.p0 {
-  @include p0;
+.p-large {
+  @include p-large;
 }
 
-.p1 {
-  @include p1;
+.p-medium {
+  @include p-medium;
+}
+
+.p-regular {
+  @include p-regular;
+}
+
+.p-regular-bold {
+  @include p-regular-bold;
+}
+
+.p-small {
+  @include p-small;
 }
 
 // Color's classes ***********************************************************

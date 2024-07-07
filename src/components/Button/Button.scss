@@ -1,7 +1,5 @@
 @use "@scss/global.scss" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 .primary {
   background-color: $primary;
   color: $white-1;
@@ -23,16 +21,15 @@
 .primary,
 .secondary {
   border-radius: 64px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .underlined {
-  color: $white-1;
-  border-bottom: 1px solid $white-1;
+  color: $grey-2;
+  border-bottom: 1px solid $grey-2;
   font-family: "Poppins", sans-serif;
   font-weight: $regular;
-}
-
-* {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
 }

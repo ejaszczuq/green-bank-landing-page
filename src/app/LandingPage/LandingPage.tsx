@@ -1,14 +1,22 @@
 import React from "react";
-import "./LandingPage.scss";
+
 import Navbar from "@components/Navbar/Navbar";
+import Footer from "@components/Footer/Footer";
+
+import "./LandingPage.scss";
 
 const LandingPage = () => {
   const tab = ["Why Us", "Services", "Our Process", "Payments", "FAQs"];
-  return <Navbar sectionNames={tab} btnName="Contact" />;
+
+  return (
+    <div className="landing-page">
+      <Navbar sectionNames={tab} />
+
+      <div style={{ width: "100%", minHeight: "120vh" }}>Content</div>
+
+      <Footer />
+    </div>
+  );
 };
 
-export default (
-  <>
-    <LandingPage />
-  </>
-);
+export default <LandingPage />;

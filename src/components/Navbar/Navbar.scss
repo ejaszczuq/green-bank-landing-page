@@ -1,27 +1,17 @@
 @use "@scss/global.scss" as *;
 
 .nav {
+  max-width: $app-container;
+  padding: 0 $app-padding-x;
+  margin: 32px auto 0;
+
   display: flex;
-  width: Fixed(1, 240px);
-  height: Hug(48px);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row nowrap;
   align-items: center;
-  padding: 0px;
-  gap: 258px;
-  padding: 20px 100px;
+  justify-content: space-between;
 
   .pageSections {
     display: flex;
     gap: 32px;
-    p {
-      color: $white-1;
-      font-weight: $medium;
-    }
-  }
-
-  .pageSections {
-    font-size: 16px;
   }
 }

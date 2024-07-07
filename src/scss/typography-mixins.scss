@@ -5,37 +5,91 @@
 @mixin h1 {
   font-size: 56px;
   line-height: 64px;
+  font-size: $bold;
+  letter-spacing: -2.5px;
+
   @include mq-max($md) {
-    font-size: 48px;
-    line-height: 56px;
   }
 }
 
 @mixin h2 {
   font-size: 48px;
   line-height: 56px;
+  letter-spacing: -0.48px;
+  font-weight: $bold;
+
   @include mq-max($md) {
-    font-size: 40px;
-    line-height: 48px;
   }
 }
 
 @mixin h3 {
   font-size: 40px;
   line-height: 48px;
+  letter-spacing: -0.32px;
+  font-weight: $bold;
+
   @include mq-max($md) {
-    font-size: 32px;
-    line-height: 40px;
+  }
+}
+
+@mixin h4 {
+  font-weight: $bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+
+  @include mq-max($md) {
+  }
+}
+
+@mixin h5 {
+  font-weight: $bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.32px;
+
+  @include mq-max($md) {
+  }
+}
+
+@mixin h6 {
+  font-weight: $bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+
+  @include mq-max($md) {
   }
 }
 
 // Paragraph Mixins
-@mixin p0 {
+@mixin p-large {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 24px;
+  font-weight: $regular;
 }
 
-@mixin p1 {
+@mixin p-medium {
+  font-weight: $medium;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 23px;
+}
+
+@mixin p-regular {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $regular;
+  letter-spacing: -0.03em;
+}
+
+@mixin p-regular-bold {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $bold;
+}
+
+@mixin p-small {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: $regular;
 }
