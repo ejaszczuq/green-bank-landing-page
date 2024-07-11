@@ -9,14 +9,12 @@ import { animateScroll } from "react-scroll";
 import classNames from "classnames";
 
 import "./Navbar.scss";
-
-interface INavbar {
-  sectionNames: string[];
-}
+import NavbarLink from "@components/NavbarLink/NavbarLink";
+import { navLinks } from "@constants/navLinks";
 
 const TOP_OFFSET = 32;
 
-const Navbar: React.FC<INavbar> = ({ sectionNames }) => {
+const Navbar = () => {
   const { offset } = useScrollPosition();
 
   const names = classNames("app-navbar", { scrolled: offset > TOP_OFFSET });
@@ -39,11 +37,21 @@ const Navbar: React.FC<INavbar> = ({ sectionNames }) => {
         </div>
 
         <div className="pageSections">
-          {sectionNames.map((section, index) => (
-            <p className="p-medium" key={index}>
-              {section}
-            </p>
-          ))}
+          {navLinks.map(({ sectionID, offsetTopDesktop, offsetTopMobile, label }, index) => {
+            return (
+              <NavbarLink
+                key={index}
+                isMobile
+                sectionID={sectionID}
+                offsetTopDesktop={offsetTopDesktop}
+                offsetTopMobile={offsetTopMobile}
+                // onClick={}
+                className="p-medium"
+              >
+                {label}
+              </NavbarLink>
+            );
+          })}
         </div>
 
         <div className="btnSection">

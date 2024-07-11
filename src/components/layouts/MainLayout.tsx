@@ -9,12 +9,10 @@ interface ILayout {
 }
 
 const MainLayout = ({ children }: ILayout) => {
-  const tab = ["Why Us", "Services", "Our Process", "Payments", "FAQs"];
-
   return (
     <div className="main-layout">
       <div className="nav-section">
-        <Navbar sectionNames={tab} />
+        <Navbar />
       </div>
 
       <main className="main-section">{children}</main>
