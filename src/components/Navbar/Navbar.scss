@@ -1,17 +1,32 @@
 @use "@scss/global.scss" as *;
 
-.nav {
-  max-width: $app-container;
-  padding: 0 $app-padding-x;
+.app-navbar {
   margin: 32px auto 0;
-
-  display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
 
   .pageSections {
     display: flex;
     gap: 32px;
+  }
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $light-sec;
+    backdrop-filter: blur(8px);
+    width: 100%;
+  }
+
+  &-container {
+    max-width: $app-container;
+    padding: 10px $app-padding-x;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

@@ -1,22 +1,21 @@
 import React from "react";
 
-import Navbar from "@components/Navbar/Navbar";
-import Footer from "@components/Footer/Footer";
-
 import "./LandingPage.scss";
 
-const LandingPage = () => {
-  const tab = ["Why Us", "Services", "Our Process", "Payments", "FAQs"];
+import MainLayout from "@components/layouts/MainLayout";
 
+const LandingPage = () => {
   return (
     <div className="landing-page">
-      <Navbar sectionNames={tab} />
-
-      <div style={{ width: "100%", minHeight: "120vh" }}>Content</div>
-
-      <Footer />
+      <div style={{ width: "100%", minHeight: "40vh" }}>Content 1</div>
+      <div style={{ width: "100%", minHeight: "120vh" }}>Content 2</div>
+      <div style={{ width: "100%", minHeight: "40vh" }}>Content 3</div>
     </div>
   );
 };
 
-export default <LandingPage />;
+export default (
+  <MainLayout>
+    <LandingPage />
+  </MainLayout>
+);
