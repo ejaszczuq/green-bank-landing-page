@@ -1,12 +1,12 @@
 import React from "react";
+
+import { BaseProps } from "@src/types/BaseProps.types";
+
 import "./Button.scss";
 
-// Improved BaseProps interface for flexibility
-export type BaseProps<T extends HTMLElement, Overrides = object> = Omit<React.HTMLProps<T>, keyof Overrides> &
-  Overrides;
-
 // Enhanced ButtonProps interface with children support
-interface ButtonProps extends BaseProps<HTMLButtonElement, { size?: "normal" | "small" }> {
+interface ButtonProps extends BaseProps<HTMLButtonElement, "size"> {
+  size?: "normal" | "small";
   type?: "button" | "submit" | "reset";
   variant?: "primary" | "secondary" | "underlined";
   children?: React.ReactNode; // Allow for children (text or elements)

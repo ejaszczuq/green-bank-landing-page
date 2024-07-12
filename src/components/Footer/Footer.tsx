@@ -6,6 +6,7 @@ import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
 import Button from "@components/Button/Button";
 
 import "./Footer.scss";
+import { scrollToTop } from "@scss/utils/scrollToTop";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,9 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-main-content">
           <div className="footer-logo">
-            <GreenBankLogo />
+            <button onClick={scrollToTop}>
+              <GreenBankLogo />
+            </button>
             <p className="p-regular">
               Discover the power of our secure and <br /> rewarding credit cards
             </p>

@@ -1,8 +1,9 @@
 import React from "react";
 
-import "./MainLayout.scss";
 import Navbar from "@components/Navbar/Navbar";
 import Footer from "@components/Footer/Footer";
+
+import "./MainLayout.scss";
 
 interface ILayout {
   children: React.ReactNode;
@@ -16,6 +17,7 @@ const MainLayout = ({ children }: ILayout) => {
       </div>
 
       <main className="main-section">{children}</main>
+
       <div className="footer-section">
         <Footer />
       </div>

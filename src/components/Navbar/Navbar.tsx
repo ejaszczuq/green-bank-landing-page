@@ -1,34 +1,35 @@
-import React from "react";
-
-import Button from "@components/Button/Button";
-import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
-
-import useScrollPosition from "@hooks/useScrollPosition";
-import { animateScroll } from "react-scroll";
-
+import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 
-import "./Navbar.scss";
-import NavbarLink from "@components/NavbarLink/NavbarLink";
+import useScrollPosition from "@hooks/useScrollPosition";
+import { scrollToTop } from "@scss/utils/scrollToTop";
 import { navLinks } from "@constants/navLinks";
 
-const TOP_OFFSET = 32;
+import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
+import Button from "@components/Button/Button";
+import NavbarLink from "@components/NavbarLink/NavbarLink";
+
+import "./Navbar.scss";
+
+const TOP_OFFSET = 20;
 
 const Navbar = () => {
   const { offset } = useScrollPosition();
+  const [hasActiveLink, setHasActiveLink] = useState(false);
 
-  const names = classNames("app-navbar", { scrolled: offset > TOP_OFFSET });
+  useEffect(() => {
+    const handler = () => setHasActiveLink(document.querySelectorAll(".navbar-active-link").length > 0);
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
-  const scrollToTop = () => {
-    animateScroll.scrollToTop({
-      duration: 110, // Adjust duration for desired scrolling speed (milliseconds)
-      behavior: "smooth",
-      delay: 100 // Set a shorter delay (in milliseconds)
-    });
-  };
+  const navbarClasses = classNames("app-navbar", {
+    scrolled: offset > TOP_OFFSET,
+    "active-link-present": hasActiveLink
+  });
 
   return (
-    <nav className={names}>
+    <nav className={navbarClasses}>
       <div className="app-navbar-container">
         <div className="brandSection">
           <button onClick={scrollToTop}>
@@ -36,23 +37,15 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="pageSections">
-          {navLinks.map(({ sectionID, offsetTopDesktop, offsetTopMobile, label }, index) => {
-            return (
-              <NavbarLink
-                key={index}
-                isMobile
-                sectionID={sectionID}
-                offsetTopDesktop={offsetTopDesktop}
-                offsetTopMobile={offsetTopMobile}
-                // onClick={}
-                className="p-medium"
-              >
+        <ul className="pageSections">
+          {navLinks.map(({ sectionID, label }, index) => (
+            <li key={index}>
+              <NavbarLink sectionID={sectionID} className="p-medium">
                 {label}
               </NavbarLink>
-            );
-          })}
-        </div>
+            </li>
+          ))}
+        </ul>
 
         <div className="btnSection">
           <Button variant="secondary">Contact</Button>
