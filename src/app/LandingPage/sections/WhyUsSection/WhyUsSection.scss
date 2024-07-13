@@ -1,0 +1,26 @@
+@use "@scss/global.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 64px;
+
+  width: 1240px;
+  height: 216px;
+
+  background: rgba(61, 84, 77, 0.24);
+  backdrop-filter: blur(8px);
+  border-radius: 32px;
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 278px;
+    text-align: center;
+    p {
+      color: $primary;
+    }
+  }
+}

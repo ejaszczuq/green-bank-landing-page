@@ -20,7 +20,7 @@ interface INavbarLink {
 const NavbarLink = ({
   children,
   sectionID,
-  offsetTopDesktop = -72,
+  offsetTopDesktop = -128,
   offsetTopMobile = 0,
   smooth = true,
   duration = 110,
