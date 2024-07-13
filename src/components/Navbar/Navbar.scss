@@ -1,75 +1,18 @@
 @use "@scss/global.scss" as *;
 
 .app-navbar {
-  margin: 20px auto 0;
-  flex-flow: row nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: $app-container;
-  padding: 10px $app-padding-x;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  z-index: 300;
 
   &.scrolled {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    margin: 0 auto;
     background-color: $light-sec;
     backdrop-filter: blur(8px);
-    // width: 100%;
-    min-width: 100%;
-  }
-
-  .pageSections {
-    display: flex;
-    gap: 32px;
-    cursor: pointer;
-    list-style: none;
-
-    li a {
-      position: relative;
-      display: block;
-      transition: transform 0.5s;
-
-      &:before {
-        content: "";
-        position: absolute;
-        top: 24px;
-        left: 0;
-        width: 100%;
-        height: 10%;
-        background: $primary;
-        transition: transform 0.5s;
-        transform-origin: right;
-        transform: scaleX(0);
-        z-index: -1;
-      }
-
-      &:hover:before {
-        transform-origin: left;
-        transform: scaleX(1);
-      }
-
-      &:not(.navbar-active-link):hover {
-        transform: scale(1);
-        opacity: 0.6;
-        filter: blur(0);
-      }
-    }
-
-    .navbar-active-link {
-      transform: scale(1.2);
-
-      &:before {
-        transform: scaleX(1) !important;
-      }
-    }
-  }
-
-  &.active-link-present ul li a:not(.navbar-active-link) {
-    opacity: 0.5;
-    filter: blur(0.75px); // Apply blur when another link is active
   }
 
   &-container {
@@ -80,5 +23,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 32px;
   }
 }

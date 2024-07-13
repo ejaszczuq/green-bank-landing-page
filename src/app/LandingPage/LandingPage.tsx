@@ -21,7 +21,7 @@ const LandingPage = () => {
       <div style={{ width: "100%", minHeight: "40vh" }} id="payments">
         Content 4 - payments
       </div>
-      <div style={{ width: "100%", minHeight: "40vh" }} id="payments">
+      <div style={{ width: "100%", minHeight: "70vh" }} id="faqs">
         Content 5 - faqs
       </div>
     </div>

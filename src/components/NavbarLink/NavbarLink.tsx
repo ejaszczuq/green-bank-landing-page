@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import "./NavbarLink.scss";
+import useScrollPosition from "@hooks/useScrollPosition";
+import classNames from "classnames";
 
 interface INavbarLink {
   children: React.ReactNode;
@@ -18,7 +20,7 @@ interface INavbarLink {
 const NavbarLink = ({
   children,
   sectionID,
-  offsetTopDesktop = -32,
+  offsetTopDesktop = -72,
   offsetTopMobile = 0,
   smooth = true,
   duration = 110,
@@ -28,8 +30,12 @@ const NavbarLink = ({
 }: INavbarLink) => {
   const offsetTop = isMobile ? offsetTopMobile : offsetTopDesktop;
 
-  const navbarLinkClass = `navbar-link`;
-  const navbarLinkActiveClass = `navbar-active-link`;
+  const { offset } = useScrollPosition();
+
+  const isScrolledToTop = offset === 0;
+
+  const navbarLinkClass = classNames(`navbar-link`, { scrolledToTop: isScrolledToTop });
+  const navbarLinkActiveClass = `navbar-active-link navbar-link-active`;
 
   return (
     <Link

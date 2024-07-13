@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classNames from "classnames";
 
 import useScrollPosition from "@hooks/useScrollPosition";
@@ -15,17 +15,9 @@ const TOP_OFFSET = 20;
 
 const Navbar = () => {
   const { offset } = useScrollPosition();
-  const [hasActiveLink, setHasActiveLink] = useState(false);
-
-  useEffect(() => {
-    const handler = () => setHasActiveLink(document.querySelectorAll(".navbar-active-link").length > 0);
-    window.addEventListener("scroll", handler);
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
 
   const navbarClasses = classNames("app-navbar", {
-    scrolled: offset > TOP_OFFSET,
-    "active-link-present": hasActiveLink
+    scrolled: offset > TOP_OFFSET
   });
 
   return (
@@ -37,15 +29,15 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="pageSections">
-          {navLinks.map(({ sectionID, label }, index) => (
-            <li key={index}>
-              <NavbarLink sectionID={sectionID} className="p-medium">
+        <div className="navbar-links">
+          {navLinks.map(({ sectionID, label }) => {
+            return (
+              <NavbarLink key={sectionID} sectionID={sectionID} className="p-medium">
                 {label}
               </NavbarLink>
-            </li>
-          ))}
-        </ul>
+            );
+          })}
+        </div>
 
         <div className="btnSection">
           <Button variant="secondary">Contact</Button>

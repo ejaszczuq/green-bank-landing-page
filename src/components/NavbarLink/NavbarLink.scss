@@ -1,0 +1,48 @@
+@use "@scss/global.scss" as *;
+
+.navbar-link {
+  position: relative;
+  display: block;
+  transition: transform 0.5s;
+
+  &.scrolledToTop {
+    opacity: 1 !important;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: $primary;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+
+  &:hover:before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  &:not(.navbar-active-link) {
+    opacity: 0.5;
+  }
+
+  &:not(.navbar-active-link):hover {
+    transform: scale(1);
+    opacity: 0.6;
+    filter: blur(0);
+  }
+}
+
+.navbar-link-active {
+  transform: scale(1.2);
+
+  &:before {
+    transform: scaleX(1) !important;
+  }
+}
