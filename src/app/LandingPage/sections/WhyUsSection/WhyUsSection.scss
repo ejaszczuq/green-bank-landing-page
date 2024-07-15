@@ -1,15 +1,14 @@
 @use "@scss/global.scss" as *;
 
-.container {
+.why-us-section {
+  max-width: $app-container;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 64px;
 
-  width: 1240px;
-  height: 216px;
-
-  background: rgba(61, 84, 77, 0.24);
+  background-color: $light-sec;
   backdrop-filter: blur(8px);
   border-radius: 32px;
 

@@ -1,0 +1,50 @@
+@use "@scss/global.scss" as *;
+
+#services {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  .services-container {
+    max-width: $app-container;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    width: 100%;
+
+    .service-box {
+      display: flex;
+      gap: 24px;
+
+      .header-and-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 304px;
+        height: 89px;
+      }
+
+      .p-regular {
+        color: $grey-2;
+      }
+      .icon-container {
+        width: 64px;
+        height: 64px;
+
+        background: #3d544d;
+        border-radius: 24px;
+
+        center {
+          padding-top: 16px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

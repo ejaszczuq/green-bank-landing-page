@@ -2,4 +2,7 @@
 
 .landing-page {
   padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
 }

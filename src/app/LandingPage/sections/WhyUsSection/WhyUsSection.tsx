@@ -1,21 +1,19 @@
 import React from "react";
-import "./WhyUsSection.scss";
+
 import { whyUsValues } from "@constants/whyUsValues";
 import Counter from "@components/Counter";
 
-type TWhyUsSection = {
-  id?: string;
-};
+import "./WhyUsSection.scss";
 
-const WhyUsSection = ({ id }: TWhyUsSection) => {
+const WhyUsSection = () => {
   return (
-    <div className="container" id={id}>
-      {whyUsValues.map(({ number, suffix, content }, index) => (
+    <section id="why-us" className="why-us-section">
+      {whyUsValues.map(({ number, suffix, content, decimal }, index) => (
         <div className="box" key={index}>
-          <Counter number={number} suffix={suffix} title={content} />
+          <Counter number={number} suffix={suffix} title={content} decimal={decimal} />
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

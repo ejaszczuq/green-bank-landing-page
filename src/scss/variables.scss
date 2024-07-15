@@ -4,6 +4,7 @@ $primary: #2bb32a;
 
 $sec: #3d544d;
 $light-sec: #2834303d;
+$lighter: rgb(39, 50, 47, 0.24);
 
 $white-1: #ffffff;
 
@@ -34,7 +35,7 @@ $breakpoints: (
 // APP SIZES
 $mobile: $md;
 $app-padding-x: 16px;
-$app-container: 1100px + 2 * $app-padding-x;
+$app-container: 1240px + 2 * $app-padding-x;
 
 $navbar-h: 60px;
 $sidebar-w: 80px;

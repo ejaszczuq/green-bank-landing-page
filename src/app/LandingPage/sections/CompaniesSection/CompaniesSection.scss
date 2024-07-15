@@ -1,0 +1,54 @@
+@use "@scss/global.scss" as *;
+
+.companies-section {
+  max-width: $app-container;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(#1a1e1c, 0), rgba(#1a1e1c, 1));
+  }
+
+  &:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(#1a1e1c, 0), rgba(#1a1e1c, 1));
+  }
+
+  .logos-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    animation: slide-logos 20s linear infinite;
+
+    .logo {
+      height: 32px;
+      width: auto;
+    }
+  }
+
+  @keyframes slide-logos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 import useScrollPosition from "@hooks/useScrollPosition";
-import { scrollToTop } from "@scss/utils/scrollToTop";
+import { scrollToTop } from "@utils/scrollToTop";
 import { navLinks } from "@constants/navLinks";
 
 import { ReactComponent as GreenBankLogo } from "@images/logo.svg";

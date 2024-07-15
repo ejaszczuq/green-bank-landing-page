@@ -6,7 +6,7 @@ import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
 import Button from "@components/Button/Button";
 
 import "./Footer.scss";
-import { scrollToTop } from "@scss/utils/scrollToTop";
+import { scrollToTop } from "@utils/scrollToTop";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -2,21 +2,25 @@ export const whyUsValues = [
   {
     suffix: `y`,
     number: 16,
-    content: "Experience"
+    content: "Experience",
+    decimal: 0
   },
   {
     suffix: `+`,
     number: 250,
-    content: "Merchant Partner"
+    content: "Merchant Partner",
+    decimal: 0
   },
   {
     suffix: `+`,
     number: 18,
-    content: "Years Experience"
+    content: "Years Experience",
+    decimal: 0
   },
   {
-    suffix: `.2k+`,
-    number: 10,
-    content: "Worldwide Clients"
+    suffix: `k+`,
+    number: 10.2,
+    content: "Worldwide Clients",
+    decimal: 1
   }
 ];
