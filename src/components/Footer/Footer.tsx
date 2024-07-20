@@ -28,7 +28,7 @@ const Footer = () => {
             {footerLinks.map(({ header, content }, index) => {
               return (
                 <div key={index} className="links-column">
-                  <p className="p-regular-bold">{header}</p>
+                  <h6>{header}</h6>
 
                   <div className="section-links">
                     {content.map(({ text, href }, index) => {

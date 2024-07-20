@@ -7,11 +7,12 @@ import WhyUsSection from "./sections/WhyUsSection/WhyUsSection";
 import CompaniesSection from "./sections/CompaniesSection/CompaniesSection";
 import ServicesSection from "./sections/ServicesSection/ServicesSection";
 import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
+import Hero from "./sections/HeroSection/HeroSection";
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div style={{ width: "100%", minHeight: "40vh" }}>Content 0 - hero</div>
+      <Hero />
       <WhyUsSection />
       <CompaniesSection />
       <ServicesSection />

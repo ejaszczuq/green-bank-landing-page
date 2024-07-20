@@ -1,0 +1,65 @@
+@use "@scss/global.scss" as *;
+
+.hero-section {
+  max-width: $app-container;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+
+    .p-large {
+      max-width: 498px;
+    }
+
+    .p-small {
+      max-width: 177px;
+      line-height: 16px;
+    }
+    button {
+      display: flex;
+      min-width: max-content;
+      gap: 16px;
+    }
+    .users {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      height: 56px;
+
+      .profile-pictures {
+        display: flex;
+        width: 120px;
+        height: 48px;
+        margin: 4px 0px;
+
+        /*  the last image margin - prevent overlapping content */
+        img:last-child {
+          margin-right: 0;
+        }
+        img {
+          margin-right: -12px;
+          box-shadow: inset 5px 5px 5px $white-1;
+          border: 2px solid $white-1;
+          border-radius: 100%;
+        }
+      }
+    }
+    .p-large,
+    .p-small {
+      color: $grey-2;
+    }
+  }
+  img[alt="header-decoraion"] {
+    position: absolute;
+    left: -10px;
+    top: 62px;
+    width: 346px;
+    height: 100px;
+  }
+}

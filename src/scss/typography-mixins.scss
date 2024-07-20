@@ -92,12 +92,6 @@
   letter-spacing: -0.03em;
 }
 
-@mixin p-regular-bold {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: $bold;
-}
-
 @mixin p-small {
   font-size: 12px;
   line-height: 20px;

@@ -2,10 +2,10 @@
 
 .primary {
   background-color: $primary;
-  color: $white-1;
+  color: $white-1 !important;
   padding: 16px 32px;
-  height: Hug(56px);
-  width: Hug(152px);
+  height: 56px;
+  width: 152px;
   font-size: $medium;
 }
 
@@ -13,8 +13,8 @@
   border: 2px solid $primary;
   color: $primary;
   font-size: $bold;
-  width: Hug(128px);
-  height: Hug(48px);
+  width: 128px;
+  height: 48px;
   padding: 12px 32px;
 }
 

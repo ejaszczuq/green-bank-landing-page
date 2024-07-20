@@ -1,0 +1,11 @@
+.card-container {
+  display: flex;
+  position: relative;
+
+  img[alt="circle-icon"] {
+    position: absolute;
+    z-index: -1;
+    left: 330px;
+    top: 52px;
+  }
+}
