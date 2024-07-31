@@ -1,0 +1,42 @@
+@use "@scss/global.scss" as *;
+
+.app-download-section {
+  display: flex;
+  max-width: $app-container;
+  margin: 0 auto;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    .p-large {
+      letter-spacing: -3%;
+      color: $grey-2;
+    }
+
+    h2 {
+      font-family: "Poppins", sans-serif;
+      max-width: 604px;
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .download-platforms {
+      display: flex;
+      gap: 24px;
+
+      button {
+        background-color: $sec;
+        border-radius: 16px;
+        padding: 16px;
+      }
+    }
+  }
+}

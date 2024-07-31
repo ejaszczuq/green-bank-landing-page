@@ -8,6 +8,7 @@ import CompaniesSection from "./sections/CompaniesSection/CompaniesSection";
 import ServicesSection from "./sections/ServicesSection/ServicesSection";
 import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
 import Hero from "./sections/HeroSection/HeroSection";
+import AppDownloadSection from "./sections/AppDownloadSection/AppDownloadSection";
 
 const LandingPage = () => {
   return (
@@ -26,6 +27,7 @@ const LandingPage = () => {
       <div style={{ width: "100%", minHeight: "70vh" }} id="faqs">
         Content 5 - faqs
       </div>
+      <AppDownloadSection />
     </div>
   );
 };
