@@ -10,6 +10,7 @@ import ReviewsSection from "./sections/ReviewsSection/ReviewsSection";
 import Hero from "./sections/HeroSection/HeroSection";
 import AppDownloadSection from "./sections/AppDownloadSection/AppDownloadSection";
 import OurProcessSection from "./sections/OurProcessSection/OurProcessSection";
+import PaymentsSection from "./sections/PaymentsSection/PaymentsSection";
 
 const LandingPage = () => {
   return (
@@ -19,9 +20,7 @@ const LandingPage = () => {
       <CompaniesSection />
       <ServicesSection />
       <OurProcessSection />
-      <div style={{ width: "100%", minHeight: "40vh" }} id="payments">
-        Content 4 - payments
-      </div>
+      <PaymentsSection />
       <ReviewsSection />
       <div style={{ width: "100%", minHeight: "70vh" }} id="faqs">
         Content 5 - faqs
