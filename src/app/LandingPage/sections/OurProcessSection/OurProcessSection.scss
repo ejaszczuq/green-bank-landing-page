@@ -1,0 +1,52 @@
+@use "@scss/global.scss" as *;
+
+.our-process-section {
+  display: flex;
+  max-width: $app-container;
+  margin: 0 auto;
+  min-height: 519px;
+  min-width: 1240px;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 604px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    p {
+      max-width: 400px;
+      font-family: "Poppins", sans-serif;
+      color: $grey-2;
+    }
+    button {
+      display: flex;
+      gap: 16px;
+      min-width: max-content;
+    }
+  }
+
+  .cards-container {
+    position: relative;
+
+    img[alt="first-card-img"] {
+      position: absolute;
+      left: 75px;
+      top: 0;
+      z-index: 1;
+    }
+    img[alt="sec-card-img"] {
+      position: absolute;
+      left: 81px;
+      top: 107.69px;
+      z-index: 0;
+    }
+    img[alt="third-card-img"] {
+      position: absolute;
+      left: 73px;
+      top: 231.62px;
+      z-index: -1;
+    }
+  }
+}
