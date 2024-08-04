@@ -1,0 +1,45 @@
+@use "@scss/global.scss" as *;
+
+.FAQs-section {
+  max-width: $app-container;
+  margin: 0 auto;
+
+  .heading {
+    padding-bottom: 64px;
+  }
+
+  .item,
+  .items-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items-container {
+    gap: 24px;
+  }
+
+  .item {
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid $grey-2;
+
+    p {
+      color: $grey-2;
+    }
+
+    .question-box {
+      position: relative;
+
+      button {
+        position: absolute;
+        right: 0;
+        top: 8px;
+      }
+    }
+
+    .collapsible-list-content {
+      width: 100%;
+      will-change: height;
+    }
+  }
+}

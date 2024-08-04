@@ -1,0 +1,37 @@
+export const listItems = [
+  {
+    question: "What credit score do I need to apply for a credit card?",
+    answer:
+      "The required credit score varies depending on the specific credit card. Generally, a good to excellent credit score (typically 670 or above) increases your chances of approval for premium credit cards. However, there are also secured credit cards available for individuals with limited credit history."
+  },
+  {
+    question: "How can I apply for a credit card online?",
+    answer:
+      "Most credit card issuers offer online application processes. You typically need to provide personal information such as your name, address, Social Security number, income, and employment details. Some issuers may require additional documents like proof of income or identification."
+  },
+  {
+    question: "Are there any annual fees associated with the credit card?",
+    answer:
+      "Yes, many credit cards have annual fees. However, there are also fee-free options available. It's important to compare different cards and consider the benefits they offer against the annual fee."
+  },
+  {
+    question: "How long does it take to receive the credit card once approved?",
+    answer:
+      "The time it takes to receive your credit card after approval can vary depending on the issuer. Typically, it can take anywhere from a few days to a couple of weeks."
+  },
+  {
+    question: "How can I check my credit card balance and transactions?",
+    answer:
+      "You can usually check your credit card balance and transactions through the issuer's online portal or mobile app. Some issuers also provide balance inquiry options through phone or SMS."
+  },
+  {
+    question: "What should I do if my credit card is lost or stolen?",
+    answer:
+      "If your credit card is lost or stolen, contact your credit card issuer immediately to report the card as missing. You may also need to file a police report. The issuer will then cancel your card and issue a new one."
+  },
+  {
+    question: "Is my credit card information secure?",
+    answer:
+      "Credit card companies employ advanced security measures to protect your information. However, it's essential to safeguard your card and PIN, avoid sharing your card details with others, and monitor your account regularly for any suspicious activity."
+  }
+];
