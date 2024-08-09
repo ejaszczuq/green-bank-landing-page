@@ -10,8 +10,7 @@
 
   .item,
   .items-container {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
   }
 
   .items-container {
@@ -20,7 +19,7 @@
 
   .item {
     gap: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 11px;
     border-bottom: 1.5px solid $grey-2;
 
     p {
@@ -33,13 +32,67 @@
       button {
         position: absolute;
         right: 0;
-        top: 8px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
 
     .collapsible-list-content {
       width: 100%;
       will-change: height;
+    }
+  }
+}
+
+// collapse button styles
+.collapse-btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  position: relative;
+
+  span {
+    position: absolute;
+    transition: 300ms;
+    background: $white-1;
+    border-radius: 1.2px;
+    transform: rotate(0deg); // initial "+" rotation
+
+    &:first-child {
+      top: 25%;
+      bottom: 25%;
+      width: 7%;
+      left: 45%;
+    }
+
+    &:last-child {
+      left: 22.5%;
+      right: 25%;
+      height: 7%;
+      top: 45%;
+    }
+  }
+}
+
+// open State Styles
+button.collapse-btn.is-open {
+  span {
+    transform: rotate(0deg);
+
+    &:last-child {
+      left: 25%;
+      right: 25%;
+    }
+  }
+}
+
+button.collapse-btn.collapse-btn--expanded {
+  span {
+    transform: rotate(90deg); // rotate to "-"
+
+    &:last-child {
+      left: 50%; // adjust position for "-"
+      right: 50%;
     }
   }
 }

@@ -15,9 +15,10 @@ interface ICollapsibleItem {
 
 const CollapsibleItem = ({ question, answer, defaultExpanded }: ICollapsibleItem) => {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({
-    easing: "cubic-bezier(0.69, -0.23, 0.31, 1.23)",
+    easing: "cubic-bezier(0.1, -1.4, 0.3, 1.3)",
     duration: 500,
-    defaultExpanded
+    defaultExpanded,
+    collapsedHeight: 5
   });
 
   const collapseBtnClasses = classNames("collapse-btn", {
@@ -29,7 +30,9 @@ const CollapsibleItem = ({ question, answer, defaultExpanded }: ICollapsibleItem
       <div role="button" className="question-box" {...getToggleProps()}>
         <h5 className="title">{question}</h5>
         <button className={collapseBtnClasses}>
-          <img src="icons/+.png" alt="+ icon" />
+          <span className="line horizontal-line" />
+          <span className="line vartical-line" />
+          {/* {collapseBtnClasses.includes('--expanded') ? <img src="icons/-.png" alt="collapse-icon" /> : <img src="icons/+.png" alt="expand-icon" />} */}
         </button>
       </div>
 

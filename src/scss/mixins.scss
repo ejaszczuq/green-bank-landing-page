@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
 @mixin flex-row($direction) {
   display: flex;
   flex-direction: row;
