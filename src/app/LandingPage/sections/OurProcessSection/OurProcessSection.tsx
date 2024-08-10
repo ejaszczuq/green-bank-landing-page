@@ -5,7 +5,7 @@ import Button from "@components/Button/Button";
 
 const OurProcessSection = () => {
   return (
-    <div className="our-process-section" id="our-process">
+    <section className="our-process-section" id="our-process">
       <div className="details">
         <h3>Design your personalized credit card.</h3>
         <p className="p-regular">
@@ -21,7 +21,7 @@ const OurProcessSection = () => {
         <img src="images/credit-cards/our-process-cards/sec-card.png" alt="sec-card-img" />
         <img src="images/credit-cards/our-process-cards/third-card.png" alt="third-card-img" />
       </div>
-    </div>
+    </section>
   );
 };
 

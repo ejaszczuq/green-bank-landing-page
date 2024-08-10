@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-main-content">
           <div className="footer-logo">
-            <button onClick={scrollToTop}>
+            <button onClick={() => scrollToTop(110, 100)}>
               <GreenBankLogo />
             </button>
             <p className="p-regular">

@@ -6,7 +6,7 @@ import "./ServicesSection.scss";
 
 const CompaniesSection = () => {
   return (
-    <section id="services">
+    <section className="services-section" id="services">
       <center>
         <h3>What do we offer?</h3>
       </center>

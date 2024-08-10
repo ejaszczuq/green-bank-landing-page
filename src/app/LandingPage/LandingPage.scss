@@ -1,9 +1,9 @@
 @use "@scss/global.scss" as *;
 
 .landing-page {
-  padding-top: 176px;
   display: flex;
   flex-direction: column;
   gap: 128px;
   overflow-x: hidden;
+  padding: 176px 16px 0 16px;
 }

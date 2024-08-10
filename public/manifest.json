@@ -1,6 +1,9 @@
 {
-  "short_name": "Green Bank",
+  "lang": "EN",
+  "dir": "ltr",
+  "short_name": "GBank",
   "name": "Green Bank",
+  "description": "The Perfect Bank for You",
   "icons": [
     {
       "src": "./images/favicon.svg",
@@ -9,17 +12,17 @@
     },
     {
       "src": "./images/logo192.png",
-      "type": "image/svg",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "./images/logo512.png",
-      "type": "image/svg",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#fafafc",
-  "background_color": "#fafafc"
+  "theme_color": "#2bb32a",
+  "background_color": "#3d544d"
 }

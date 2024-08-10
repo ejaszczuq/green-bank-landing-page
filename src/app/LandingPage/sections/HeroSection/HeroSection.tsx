@@ -12,10 +12,12 @@ const Hero = () => {
     <section className="hero-section">
       <div className="details">
         <h1>Discover the Perfect Credit Card for You</h1>
+
         <p className="p-large">
           Discover the power of our secure and rewarding credit cards. Explore our range of credit cards and take
           control of your finances today.
         </p>
+
         <Button variant="primary">
           Get Started <img src="icons/arrow.png" alt="arrow-icon" />
         </Button>
@@ -31,8 +33,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
       <Card />
-      <img src="images/hero-header-decoration.png" alt="header-decoraion" />
+      <img src="images/layouts/hero-header-decoration.png" alt="header-decoraion" />
     </section>
   );
 };

@@ -8,18 +8,62 @@
   flex-direction: row;
   align-items: flex-start;
 
+  h1 {
+    @media (max-width: $lg) {
+      position: absolute;
+      top: -50px;
+    }
+    @media (max-width: 840px) {
+      font-size: $h1-base-font-size * 0.75;
+    }
+    @media (max-width: 760px) {
+      font-size: $h1-base-font-size * 0.7;
+    }
+
+    @media (max-width: 780px) {
+      line-height: 35px;
+    }
+
+    min-width: 400px;
+  }
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
   .details {
     display: flex;
     flex-direction: column;
     gap: 31px;
 
+    @media (max-width: $lg) {
+      flex-direction: row;
+      gap: 10px;
+    }
+
     .p-large {
       max-width: 498px;
+      @media (max-width: 700px) {
+        position: absolute;
+        top: 80px;
+        right: 16px;
+      }
+
+      @media (max-width: 800px) {
+        position: absolute;
+        top: 120px;
+        right: 16px;
+      }
     }
 
     .p-small {
       max-width: 177px;
       line-height: 16px;
+
+      @media (max-width: 715px) {
+        visibility: hidden;
+      }
     }
     button {
       display: flex;
@@ -61,5 +105,9 @@
     top: 62px;
     width: 346px;
     height: 100px;
+
+    @media (max-width: 995px) {
+      visibility: hidden;
+    }
   }
 }

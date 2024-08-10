@@ -20,7 +20,7 @@ const AppDownloadSection = () => {
         </div>
       </div>
       <div className="application-view">
-        <img src="images/app-view.png" alt="application-view-img" />
+        <img src="images/layouts/app-view.png" alt="application-view-img" />
       </div>
     </section>
   );

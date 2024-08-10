@@ -7,6 +7,16 @@
   width: 100%;
   z-index: 300;
 
+  button {
+    @media (max-width: $md) {
+      height: 20px;
+      width: fit-content;
+      font-size: 10px;
+      line-height: 2.5px;
+      padding: 10px;
+    }
+  }
+
   &.scrolled {
     position: fixed;
     top: 0;
@@ -23,6 +33,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: $md) {
+      padding: 0 10px 0 5px;
+    }
   }
 
   .navbar-links {
@@ -30,5 +44,18 @@
     flex-flow: row nowrap;
     align-items: center;
     gap: 32px;
+    min-width: max-content;
+
+    @media (max-width: $md) {
+      gap: 12px;
+    }
+  }
+
+  svg {
+    @media (max-width: $sm) {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
   }
 }
