@@ -1,12 +1,30 @@
 @use "@scss/global.scss" as *;
 
+$transition: all 0.35s ease-in-out;
+
 .primary {
   background-color: $primary;
   color: $white-1 !important;
-  padding: 16px 32px;
-  height: 56px;
-  width: 152px;
+  max-height: 56px;
+  max-width: 152px;
   font-size: $medium;
+  border: 2px solid transparent;
+  padding: 14px 30px;
+
+  svg path {
+    transition: $transition;
+  }
+
+  &:hover,
+  &:active {
+    border: 2px solid $primary;
+    color: $primary !important;
+    background-color: transparent;
+
+    svg path {
+      stroke: $primary;
+    }
+  }
 }
 
 .secondary {
@@ -16,6 +34,12 @@
   width: 128px;
   height: 48px;
   padding: 12px 32px;
+
+  &:hover,
+  &:active {
+    background-color: $primary;
+    color: $white-1 !important;
+  }
 }
 
 .primary,
@@ -23,6 +47,7 @@
   border-radius: 64px;
   font-size: 16px;
   line-height: 24px;
+  transition: $transition;
 }
 
 .underlined {
@@ -32,4 +57,9 @@
   font-weight: $regular;
   font-size: 12px;
   line-height: 14px;
+  transition: $transition;
+
+  &:hover {
+    border-bottom-color: $primary;
+  }
 }

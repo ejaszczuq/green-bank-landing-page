@@ -1,11 +1,12 @@
 import React from "react";
 
-import "./HeroSection.scss";
-
 import Button from "@components/Button/Button";
 import Counter from "@components/Counter";
-
 import { Card } from "./HeroSectionCard/HeroSectionCard";
+
+import { ReactComponent as ArrowRightIcon } from "@icons/arrow.svg";
+
+import "./HeroSection.scss";
 
 const Hero = () => {
   return (
@@ -19,7 +20,8 @@ const Hero = () => {
         </p>
 
         <Button variant="primary">
-          Get Started <img src="icons/arrow.png" alt="arrow-icon" />
+          Get Started
+          <ArrowRightIcon />
         </Button>
         <div className="users">
           <div className="profile-pictures">

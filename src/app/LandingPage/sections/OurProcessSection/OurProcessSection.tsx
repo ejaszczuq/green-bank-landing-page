@@ -1,7 +1,10 @@
 import React from "react";
 
-import "./OurProcessSection.scss";
 import Button from "@components/Button/Button";
+
+import { ReactComponent as ArrowRightIcon } from "@icons/arrow.svg";
+
+import "./OurProcessSection.scss";
 
 const OurProcessSection = () => {
   return (
@@ -13,7 +16,7 @@ const OurProcessSection = () => {
           makes you feel extraordinary
         </p>
         <Button variant="primary">
-          Create New Card <img src="icons/arrow.png" alt="arrow-icon" />
+          Create New Card <ArrowRightIcon />
         </Button>
       </div>
       <div className="cards-container">

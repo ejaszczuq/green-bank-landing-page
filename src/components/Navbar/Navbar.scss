@@ -7,6 +7,22 @@
   width: 100%;
   z-index: 300;
 
+  .logo-desktop {
+    display: block;
+  }
+  .logo-mobile {
+    display: none;
+  }
+
+  @include mq-max($sm) {
+    .logo-desktop {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
+  }
+
   button {
     @media (max-width: $md) {
       height: 20px;
@@ -48,14 +64,6 @@
 
     @media (max-width: $md) {
       gap: 12px;
-    }
-  }
-
-  svg {
-    @media (max-width: $sm) {
-      visibility: hidden;
-      height: 0;
-      width: 0;
     }
   }
 }

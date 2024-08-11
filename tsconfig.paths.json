@@ -22,6 +22,7 @@
       "@src/types/*": ["./src/types/*"],
       "@utils/*": ["./src/utils/*"],
       "@images/*": ["./public/images/*"],
+      "@icons/*": ["./public/icons/*"],
       "@downloads/*": ["./public/downloads/*"],
       "@pdfs/*": ["./public/pdfs/*"],
       "@locales/*": ["./public/locales/*"]

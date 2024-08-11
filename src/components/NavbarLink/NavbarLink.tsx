@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
-
-import "./NavbarLink.scss";
-import useScrollPosition from "@hooks/useScrollPosition";
 import classNames from "classnames";
 
+import useScrollPosition from "@hooks/useScrollPosition";
+
+import "./NavbarLink.scss";
 interface INavbarLink {
   children: React.ReactNode;
   sectionID: string;

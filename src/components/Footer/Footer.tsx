@@ -1,12 +1,12 @@
 import React from "react";
 
 import { footerLinks } from "@constants/footerLinks";
+import { scrollToTop } from "@utils/scrollToTop";
 
 import { ReactComponent as GreenBankLogo } from "@images/logo.svg";
 import Button from "@components/Button/Button";
 
 import "./Footer.scss";
-import { scrollToTop } from "@utils/scrollToTop";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
