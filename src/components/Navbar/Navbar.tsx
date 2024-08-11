@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 
 import useScrollPosition from "@hooks/useScrollPosition";
@@ -13,7 +14,16 @@ import "./Navbar.scss";
 
 const TOP_OFFSET = 20;
 
+type TCommonTranslations =
+  | "common:why-us"
+  | "common:services"
+  | "common:our-process"
+  | "common:payments"
+  | "common:faqs"
+  | "common:contact";
+
 const Navbar = () => {
+  const { t } = useTranslation(["common"]);
   const { offset } = useScrollPosition();
 
   const navbarClasses = classNames("app-navbar", {
@@ -34,14 +44,14 @@ const Navbar = () => {
           {navLinks.map(({ sectionID, label }) => {
             return (
               <NavbarLink key={sectionID} sectionID={sectionID} className="p-medium">
-                {label}
+                {t(label as TCommonTranslations)}
               </NavbarLink>
             );
           })}
         </div>
 
         <div className="btnSection">
-          <Button variant="secondary">Contact</Button>
+          <Button variant="secondary">{t("common:contact")}</Button>
         </div>
       </div>
     </nav>

@@ -34,7 +34,7 @@ const NavbarLink = ({
 
   const isScrolledToTop = offset === 0;
 
-  const navbarLinkClass = classNames(`navbar-link`, { scrolledToTop: isScrolledToTop });
+  const navbarLinkClass = classNames(`navbar-link`, { scrolledToTop: isScrolledToTop }, className);
   const navbarLinkActiveClass = `navbar-active-link navbar-link-active`;
 
   return (

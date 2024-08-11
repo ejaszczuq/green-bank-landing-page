@@ -1,4 +1,41 @@
 {
   "contact": "Contact",
-  "learnMore": "Learn more"
+  "learn-more": "Learn More",
+  "get-started": "Get Started",
+  "here": "here",
+
+  "why-us": "Why Us",
+  "services": "Services",
+  "our-process": "Our Process",
+  "payments": "Payments",
+  "faqs": "FAQs",
+
+  "about-us": "About Us",
+  "products": "Products",
+  "useful-hrefs": "Useful hrefs",
+  "social": "Social",
+
+  "security-guarantee": "Security Guarantee",
+  "investing": "Investing",
+  "multiple-method": "Multiple Method",
+  "investors": "Investors",
+  "features": "Features",
+  "book-a-demo": "Book a demo",
+  "security": "Security",
+  "credits-cards": "Credits Cards",
+  "gift-cards": "Gift Cards",
+  "savings-accounts": "Savings accounts",
+  "nft": "NFT",
+  "free-rewards": "Free rewards",
+  "documentation": "Documentation",
+  "affiliate-program": "Affiliate program",
+  "changelog": "Changelog",
+  "license": "License",
+  "site-maps": "Site Maps",
+  "news": "News",
+
+  "copyright": "copyright",
+  "all-rights-reserved": "All Rights Reserved",
+  "this-page-uses-cookies": "This page uses cookies",
+  "see-cookies-details": "See cookies details"
 }

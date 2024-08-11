@@ -2,33 +2,23 @@ import { SectionIds } from "./sectionIds";
 
 export const navLinks = [
   {
-    label: "Why Us",
+    label: "common:why-us",
     sectionID: SectionIds.WhyUs
-    // offsetTopDesktop: 0,
-    // offsetTopMobile: 0
   },
   {
-    label: "Services",
+    label: "common:services",
     sectionID: SectionIds.Services
-    // offsetTopDesktop: 0,
-    // offsetTopMobile: 0
   },
   {
-    label: "Our Process",
+    label: "common:our-process",
     sectionID: SectionIds.OurProcess
-    // offsetTopDesktop: 0,
-    // offsetTopMobile: 0
   },
   {
-    label: "Payments",
+    label: "common:payments",
     sectionID: SectionIds.Payments
-    // offsetTopDesktop: 0,
-    // offsetTopMobile: 0
   },
   {
-    label: "FAQs",
+    label: "common:faqs",
     sectionID: SectionIds.FAQs
-    // offsetTopDesktop: 0,
-    // offsetTopMobile: 0
   }
 ];

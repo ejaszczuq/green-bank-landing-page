@@ -5,18 +5,18 @@ import Button from "@components/Button/Button";
 import { ReactComponent as ArrowRightIcon } from "@icons/arrow.svg";
 
 import "./OurProcessSection.scss";
+import { useTranslation } from "react-i18next";
 
 const OurProcessSection = () => {
+  const { t } = useTranslation(["landing"]);
+
   return (
     <section className="our-process-section" id="our-process">
       <div className="details">
-        <h3>Design your personalized credit card.</h3>
-        <p className="p-regular">
-          You have the freedom to personalize the design of your credit card, ensuring a truly unique experience that
-          makes you feel extraordinary
-        </p>
+        <h3>{t("landing:our-process.title")}</h3>
+        <p className="p-regular">{t("landing:our-process.description")}</p>
         <Button variant="primary">
-          Create New Card <ArrowRightIcon />
+          {t("landing:our-process.button-txt")} <ArrowRightIcon />
         </Button>
       </div>
       <div className="cards-container">

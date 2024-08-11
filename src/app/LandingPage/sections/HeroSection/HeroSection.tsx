@@ -7,20 +7,20 @@ import { Card } from "./HeroSectionCard/HeroSectionCard";
 import { ReactComponent as ArrowRightIcon } from "@icons/arrow.svg";
 
 import "./HeroSection.scss";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation(["landing", "common"]);
+
   return (
     <section className="hero-section">
       <div className="details">
-        <h1>Discover the Perfect Credit Card for You</h1>
+        <h1>{t("landing:hero.title")}</h1>
 
-        <p className="p-large">
-          Discover the power of our secure and rewarding credit cards. Explore our range of credit cards and take
-          control of your finances today.
-        </p>
+        <p className="p-large">{t("landing:hero.description")}</p>
 
         <Button variant="primary">
-          Get Started
+          {t("common:get-started")}
           <ArrowRightIcon />
         </Button>
         <div className="users">

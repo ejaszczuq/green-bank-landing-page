@@ -1,20 +1,20 @@
 export const reviews = [
   {
-    quote: `"Great session! Dani was super helpful. She shared some practical advice on how can lorem ip we go about refining our service offerings."`,
-    name: "Hadid Khan",
-    profession: "UIUX Designer",
+    quote: "reviews:first.quote",
+    name: "reviews:first.name",
+    profession: "reviews:first.profession",
     picture: "images/profile-pictures/hadid.png"
   },
   {
-    quote: `"It's is both attractive and highly adaptable. It's exactly what I've been looking forefinitely wo lorem ipsum dolorth the investment."`,
-    name: "Wade Warren",
-    profession: "Web Designer",
+    quote: "reviews:sec.quote",
+    name: "reviews:sec.name",
+    profession: "reviews:sec.profession",
     picture: "images/profile-pictures/wade.png"
   },
   {
-    quote: `"I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking. "`,
-    name: "Jenny Wilson",
-    profession: "Trust Administrator",
+    quote: "reviews:third.quote",
+    name: "reviews:third.name",
+    profession: "reviews:third.profession",
     picture: "images/profile-pictures/jenny.png"
   }
 ];

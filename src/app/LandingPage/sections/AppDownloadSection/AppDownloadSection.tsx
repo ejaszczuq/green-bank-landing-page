@@ -1,14 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./AppDownloadSection.scss";
 
 const AppDownloadSection = () => {
+  const { t } = useTranslation(["landing"]);
+
   return (
     <section className="app-download-section">
       <div className="details">
         <div className="desc">
-          <h2>Easy Way to manage your finances</h2>
-          <p className="p-large">Easy to use mobile app that support on android and ios.</p>
+          <h2>{t("landing:app-download.title")}</h2>
+          <p className="p-large">{t("landing:app-download.description")}</p>
         </div>
         <div className="download-platforms">
           <button>

@@ -1,7 +1,28 @@
 {
+  "hero": {
+    "title": "Discover the Perfect Credit Card for You",
+    "description": "Discover the power of our secure and rewarding credit cards. Explore our range of credit cards and take control of your finances today."
+  },
+  "our-process": {
+    "title": "Design your personalized credit card",
+    "description": "You have the freedom to personalize the design of your credit card, ensuring a truly unique experience that makes you feel extraordinary.",
+    "button-txt": "Create New Card"
+  },
   "payments": {
     "title": "Find the Perfect Credit Card for You",
-    "description": "Discover your ideal credit card with ease. Our comprehensive selection caters to every financial need and lifestyle. Whether you seek cashback rewards, travel perks, or building credit, we have the perfect credit card waiting for you. Unleash the possibilities and find the credit card that fits your unique goals and aspirations.",
-    "example": "Zielona <span>dupka</span> taka fajna dla jego"
+    "description": "Discover your ideal credit card with ease. Our comprehensive selection caters to every financial need and lifestyle. Whether you seek cashback rewards, travel perks, or building credit, we have the perfect credit card waiting for you. Unleash the possibilities and find the credit card that fits your unique goals and aspirations."
+  },
+  "services": {
+    "security-desc": "Your data and funds will be securely protected.",
+    "investing-desc": "Grow your wealth with our smart investment tools.",
+    "methods-desc": "Choose the payment method that suits you best."
+  },
+
+  "app-download": {
+    "title": "Easy Way to manage your finances",
+    "description": "Easy to use mobile app that support on android and ios."
+  },
+  "footer": {
+    "description": "Discover the power of our secure and rewarding credit cards"
   }
 }

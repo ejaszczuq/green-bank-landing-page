@@ -1,17 +1,17 @@
 export const services = [
   {
-    header: `Security Guarantee `,
+    header: "common:security-guarantee",
     src: "icons/security.png",
-    desc: "Your data and funds will be securely protected."
+    desc: "landing:services.security-desc"
   },
   {
-    header: `Investing`,
+    header: "common:investing",
     src: "icons/investing.png",
-    desc: "Your data and funds will be securely protected."
+    desc: "landing:services.investing-desc"
   },
   {
-    header: `Multiple Method`,
+    header: "common:multiple-method",
     src: "icons/analytics.png",
-    desc: "Your data and funds will be securely protected."
+    desc: "landing:services.methods-desc"
   }
 ];

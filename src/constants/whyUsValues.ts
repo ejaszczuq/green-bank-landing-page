@@ -1,26 +1,26 @@
 export const whyUsValues = [
   {
-    suffix: `y`,
-    number: 16,
-    content: "Experience",
-    decimals: 0
+    suffix: "whyUs:first.suffix",
+    number: "whyUs:first.number",
+    content: "whyUs:first.content",
+    decimals: "whyUs:first.decimals"
   },
   {
-    suffix: `+`,
-    number: 250,
-    content: "Merchant Partner",
-    decimals: 0
+    suffix: "whyUs:sec.suffix",
+    number: "whyUs:sec.number",
+    content: "whyUs:sec.content",
+    decimals: "whyUs:sec.decimals"
   },
   {
-    suffix: `+`,
-    number: 18,
-    content: "Years Experience",
-    decimals: 0
+    suffix: "whyUs:third.suffix",
+    number: "whyUs:third.number",
+    content: "whyUs:third.content",
+    decimals: "whyUs:third.decimals"
   },
   {
-    suffix: `k+`,
-    number: 10.2,
-    content: "Worldwide Clients",
-    decimals: 1
+    suffix: "whyUs:fourth.suffix",
+    number: "whyUs:fourth.number",
+    content: "whyUs:fourth.content",
+    decimals: "whyUs:fourth.decimals"
   }
 ];

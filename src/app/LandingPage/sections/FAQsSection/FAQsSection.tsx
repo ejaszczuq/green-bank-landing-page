@@ -6,6 +6,7 @@ import { listItems } from "@constants/listItems";
 import classNames from "classnames";
 
 import "./FAQsSection.scss";
+import { useTranslation } from "react-i18next";
 
 interface ICollapsibleItem {
   question: string;
@@ -14,6 +15,8 @@ interface ICollapsibleItem {
 }
 
 const CollapsibleItem = ({ question, answer, defaultExpanded }: ICollapsibleItem) => {
+  const { t } = useTranslation(["faqs"]);
+
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse({
     easing: "cubic-bezier(0.1, -1.4, 0.3, 1.3)",
     duration: 500,
@@ -28,7 +31,7 @@ const CollapsibleItem = ({ question, answer, defaultExpanded }: ICollapsibleItem
   return (
     <div className="item">
       <div role="button" className="question-box" {...getToggleProps()}>
-        <h5 className="title">{question}</h5>
+        <h5 className="title">{t(question as any)}</h5>
         <button className={collapseBtnClasses}>
           <span className="line horizontal-line" />
           <span className="line vartical-line" />
@@ -37,7 +40,7 @@ const CollapsibleItem = ({ question, answer, defaultExpanded }: ICollapsibleItem
       </div>
 
       <div className="collapsible-list-content" {...getCollapseProps()}>
-        <p className="p-regular">{answer}</p>
+        <p className="p-regular">{t(answer as any)}</p>
       </div>
     </div>
   );

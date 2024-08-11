@@ -1,37 +1,37 @@
 export const footerLinks = [
   {
-    header: "About Us",
+    header: "common:about-us",
     content: [
-      { text: "Investors", href: "#" },
-      { text: "Features", href: "#" },
-      { text: "Book a demo", href: "#" },
-      { text: "Security", href: "#" }
+      { text: "common:investors", href: "#" },
+      { text: "common:features", href: "#" },
+      { text: "common:book-a-demo", href: "#" },
+      { text: "common:security", href: "#" }
     ]
   },
   {
-    header: "Products",
+    header: "common:products",
     content: [
-      { text: "Credits Cards", href: "#" },
-      { text: "Gift Cards", href: "#" },
-      { text: "Savings accounts", href: "#" },
-      { text: "NFT", href: "#" }
+      { text: "common:credits-cards", href: "#" },
+      { text: "common:gift-cards", href: "#" },
+      { text: "common:savings-accounts", href: "#" },
+      { text: "common:nft", href: "#" }
     ]
   },
   {
-    header: "Useful hrefs",
+    header: "common:useful-hrefs",
     content: [
-      { text: "Free rewards", href: "#" },
-      { text: "Documentation", href: "#" },
-      { text: "Affiliate program", href: "#" }
+      { text: "common:free-rewards", href: "#" },
+      { text: "common:documentation", href: "#" },
+      { text: "common:affiliate-program", href: "#" }
     ]
   },
   {
-    header: "Social",
+    header: "common:social",
     content: [
-      { text: "Changelog", href: "#" },
-      { text: "License", href: "#" },
-      { text: "Site Maps", href: "#" },
-      { text: "News", href: "#" }
+      { text: "common:hangelog", href: "#" },
+      { text: "common:license", href: "#" },
+      { text: "common:site-maps", href: "#" },
+      { text: "common:news", href: "#" }
     ]
   }
 ];
