@@ -6,4 +6,8 @@
   gap: 128px;
   overflow-x: hidden;
   padding: 176px 16px 0 16px;
+
+  @media (max-width: $md) {
+    gap: 80px;
+  }
 }

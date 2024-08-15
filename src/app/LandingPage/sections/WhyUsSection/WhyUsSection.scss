@@ -21,5 +21,37 @@
     p {
       color: $primary;
     }
+
+    @media (max-width: $xxl) {
+      gap: 6px;
+      width: 230px;
+    }
+
+    @media (max-width: $xl) {
+      gap: 6px;
+      width: 200px;
+    }
+
+    @media (max-width: $lg) {
+      gap: 4px;
+      width: 160px;
+      padding: 10px 0;
+    }
+  }
+
+  @media (max-width: $xxl) {
+    max-width: max-content;
+  }
+
+  @media (max-width: $lg) {
+    padding: 32px;
+  }
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $sm) {
+    padding: 32px 20px;
   }
 }

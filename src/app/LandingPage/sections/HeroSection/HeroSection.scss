@@ -39,21 +39,20 @@
 
     @media (max-width: $lg) {
       flex-direction: row;
-      gap: 10px;
+      gap: 15px;
     }
 
     .p-large {
       max-width: 498px;
+
       @media (max-width: 700px) {
         position: absolute;
         top: 80px;
-        right: 16px;
       }
 
       @media (max-width: 800px) {
         position: absolute;
         top: 120px;
-        right: 16px;
       }
     }
 

@@ -1,24 +1,55 @@
+@use "@scss/global.scss" as *;
+
+.hero-section-card {
+  margin: 0 auto;
+  max-width: $app-container;
+}
+
 .card-container {
   display: flex;
   position: relative;
 
-  img[alt="circle-icon"] {
+  @media (max-width: 800px) {
+    margin-top: 60px;
+    margin-bottom: -25px;
+  }
+
+  .circle {
     position: absolute;
     z-index: -1;
     left: 330px;
     top: 52px;
 
+    @media (max-width: $lg) {
+      height: 355px;
+      margin: 0 50px;
+    }
+
+    @media (max-width: 900px) {
+      height: 315px;
+      margin: 10px -10px;
+    }
+
     @media (max-width: 800px) {
-      height: 275px;
-      left: 170px;
-      top: 65px;
+      height: 330px;
+      margin: -20px -70px;
     }
   }
 
-  img[alt="credit-card-img"] {
+  .credit-card {
+    @media (max-width: $lg) {
+      height: 400px;
+      margin: 0px 130px;
+    }
+
+    @media (max-width: 900px) {
+      height: 350px;
+      margin: 10px 90px;
+    }
+
     @media (max-width: 800px) {
-      padding-top: 50px;
-      height: 310px;
+      height: 320px;
+      margin: 10px 50px;
     }
   }
 }
